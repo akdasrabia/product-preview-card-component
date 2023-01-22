@@ -1,4 +1,4 @@
-<h1 align="center">Todo app with react and redux</h1>
+<h1 align="center">Product Preview Card Component</h1>
 
 <div align="center">
     <a href="https://akdasrabia-product-preview-card.netlify.app/">
