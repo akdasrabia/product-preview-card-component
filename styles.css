@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/** GENARAL SETTINGS **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan-color: hsl(158, 36%, 37%);
+    --cream-color: hsl(30, 38%, 92%);
+
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondaty-font: 'Fraunces', serif;
+    --card-border-radius: 20px;
+    --card-p-margin: 0px;
+
+}
+
+html {
+    font-size: 14px;
+    font-family: var(--primary-font);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream-color);
+}
+
+
+.card {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card__image {
+    width: 50%;
+    border-top-left-radius: var(--card-border-radius);
+    border-bottom-left-radius: var(--card-border-radius);
+}
+
+/* picture {
+    width: 300px;
+    height: auto;
+} */
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: var(--card-border-radius);
+    border-bottom-left-radius: var(--card-border-radius);
+}
+
+.card__detail {
+    width: 50%;
+    height: auto;
+    background-color: var(--white);
+    border-top-right-radius: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
+    padding: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__detail-category {
+    font-size: 1em;
+    letter-spacing: .5em;
+    margin-bottom: var(--card-p-margin);
+    color: var(--dark-cyan-color);
+}
+
+.card__detail-name {
+    font-size: 3em;
+    color: var(--very-dark-blue);
+    font-family: var(--secondaty-font);
+    font-weight: 700;
+    line-height: 1;
+    padding-right: 30px;
+    margin-bottom: calc(var(--card-p-margin)*2);
+}
+
+.card__detail-desc {
+    color: var(--dark-cyan-color);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: calc(var(--card-p-margin)*2);
+}
+
+.card__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card__price-current {
+    font-size: 2.5em;
+    font-family: var(--secondaty-font);
+    color: var(--dark-cyan-color);
+    margin-right: 10px;
+}
+
+.card__price-old {
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.card__button {
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark-cyan-color);
+    border-radius: calc(var(--card-border-radius)/2);
+    border: none;
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in;
+}
+
+.card__button:hover {
+    background-color: var(--very-dark-blue);
+}
+
+.card__button img {
+    width: auto;
+    margin-right: var(--card-p-margin);
+}
+
+
+
+/* .card__button p {} */
