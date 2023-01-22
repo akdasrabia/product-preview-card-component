@@ -36,6 +36,10 @@ body {
     background-color: var(--cream-color);
 }
 
+.card__area {
+    padding-right: auto;
+    padding-left: auto;
+}
 
 .card {
     width: 800px;
@@ -93,7 +97,7 @@ body {
 }
 
 .card__detail-desc {
-    color: var(--dark-cyan-color);
+    color: var(--dark-grayish-blue);
     font-size: 1.2em;
     line-height: 1.5em;
     margin-bottom: calc(var(--card-p-margin)*2);
@@ -143,5 +147,98 @@ body {
 }
 
 
+@media only screen and (max-width: 992px) {
+    .card {
+        width: 600px;
+        height: auto;
+    }
+    .card__detail-name {
+        font-size: 1.8em;
+    }
+    .card__detail-desc {
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .card__button {
+        height: 40px;
+        font-size: 1em;
+    }
+}
 
-/* .card__button p {} */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 500px;
+        height: auto;
+    }
+    .card__detail-name {
+        font-size: 1.8em;
+    }
+    .card__detail-desc {
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .card__button {
+        height: 40px;
+        font-size: 1em;
+    }
+    .card__price-current {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .card {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white);
+        border-radius: var(--card-border-radius);
+    }
+     .card__image {
+        width: 100%;
+        height: auto;
+     }
+
+     .card__image img {
+        border-top-right-radius: var(--card-border-radius);
+        border-bottom-left-radius: 0;
+     }
+
+     .card__detail {
+        width: 100%;
+        margin-top: 30px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--card-border-radius);
+
+     }
+
+     .card__detail-category {
+        font-size: 1em;
+        margin-bottom: 20px;
+     }
+
+    .card__detail-name {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .card__detail-desc {
+        font-size: 1.5em;
+        line-height: 1em;
+        margin-bottom: 40px;
+    }
+
+
+
+    .card__button {
+        margin-top: 20px;
+        height: 60px;
+        font-size: 1em;
+    }
+    .card__price-current {
+        font-size: 3em;
+    }
+    .card__price-old {
+        font-size: 1.3em;
+    }
+}
+
