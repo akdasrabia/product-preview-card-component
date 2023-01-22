@@ -37,8 +37,9 @@ body {
 }
 
 .card__area {
-    padding-right: auto;
-    padding-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
