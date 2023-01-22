@@ -208,6 +208,7 @@ body {
      .card__detail {
         width: 100%;
         margin-top: 30px;
+        padding: 0px 20px 30px 20px;
         border-top-right-radius: 0;
         border-bottom-left-radius: var(--card-border-radius);
 
@@ -227,9 +228,6 @@ body {
         line-height: 1em;
         margin-bottom: 40px;
     }
-
-
-
     .card__button {
         margin-top: 20px;
         height: 60px;
@@ -243,3 +241,25 @@ body {
     }
 }
 
+@media only screen and (max-width: 400px) {
+
+
+     .card__detail-category {
+        font-size: 1em;
+     }
+
+    .card__detail-name {
+        font-size: 2em;
+
+    }
+    .card__detail-desc {
+        font-size: 1em;
+    }
+
+    .card__price-current {
+        font-size: 2em;
+    }
+    .card__price-old {
+        font-size: 1em;
+    }
+}
